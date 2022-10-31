@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Tailwind from "./Tailwind.svelte"
-  import Intro from "./Intro.svelte"
-  import Work from "./Work.svelte"
-  import Kofi from "./Kofi.svelte"
-  import HideToggle from "./HideToggle.svelte"
+  import Tailwind from "./Tailwind.svelte";
+  import Intro from "./Intro.svelte";
+  import Work from "./Work.svelte";
+  import Kofi from "./Kofi.svelte";
+  import HideToggle from "./HideToggle.svelte";
   import {
     educations,
     fullVersionLink,
@@ -13,19 +13,19 @@
     sourceLink,
     technologies,
     workExperiences,
-  } from "./data"
+  } from "./data";
 
-  let editMode = false
+  let editMode = false;
 
   function toggleMode() {
-    editMode = !editMode
+    editMode = !editMode;
   }
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
-{#if introData.github == "narze"}
+<!-- {#if introData.github == "narze"}
   <Kofi name={introData.github} />
-{/if}
+{/if} -->
 
 <Tailwind />
 
@@ -70,7 +70,7 @@
       {#each technologies as tech}
         <li>
           <HideToggle />
-          <span class="w-28 inline-block">{tech.section}</span>
+          <span class="w-40 inline-block">{tech.section}</span>
           <span>{tech.details}</span>
         </li>
       {/each}

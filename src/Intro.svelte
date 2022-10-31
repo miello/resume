@@ -1,12 +1,12 @@
 <script lang="ts">
-  export let name: string = "Foo"
-  export let nickname: string = ""
-  export let phone: string = ""
-  export let email: string = ""
-  export let github: string = ""
-  export let linkedin: string = ""
-  export let location: string = ""
-  export let website: string = ""
+  export let name: string = "Foo";
+  export let nickname: string = "";
+  export let phone: string = "";
+  export let email: string = "";
+  export let github: string = "";
+  export let linkedin: string = "";
+  export let location: string = "";
+  export let website: string = "";
 </script>
 
 <div
@@ -19,7 +19,7 @@
   </div>
 
   <h2
-    class="flex-none order-first sm:order-none print:order-none text-4xl sm:text-2xl md:text-3xl lg:text-6xl text-center p-4 print:pt-0"
+    class="flex-none order-first sm:order-none print:order-none text-2xl sm:text-lg md:text-xl lg:text-3xl text-center p-4 print:pt-0"
   >
     {name}
     <span class="block -mt-1 text-base lg:text-lg">({nickname})</span>
@@ -38,13 +38,15 @@
         >{website}</a
       >
     </p>
-    <p>
-      <a
-        href={`https://linkedin.com/in/${linkedin}`}
-        target="_blank"
-        rel="noreferrer">Linkedin</a
-      >
-    </p>
+    {#if linkedin}
+      <p>
+        <a
+          href={`https://linkedin.com/in/${linkedin}`}
+          target="_blank"
+          rel="noreferrer">linkedin.com/in/{linkedin}</a
+        >
+      </p>
+    {/if}
   </div>
 </div>
 

@@ -1,22 +1,22 @@
 <script lang="ts">
-  import { onMount } from "svelte"
+  import { onMount } from "svelte";
 
-  export let name: string
+  export let name: string;
 
-  let kofiReady = false
-  let mounted = false
+  let kofiReady = false;
+  let mounted = false;
 
   onMount(() => {
-    mounted = true
+    mounted = true;
     if (kofiReady) {
-      loadKofiWidget()
+      loadKofiWidget();
     }
-  })
+  });
 
   function kofiLoaded() {
-    kofiReady = true
+    kofiReady = true;
     if (mounted) {
-      loadKofiWidget()
+      loadKofiWidget();
     }
   }
 
@@ -30,7 +30,7 @@
         "floating-chat.donateButton.text-color": "#fff",
       },
       "kofiContainer"
-    )
+    );
   }
 </script>
 
@@ -38,7 +38,8 @@
   <script
     type="text/javascript"
     src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
-    on:load={kofiLoaded}></script>
+    on:load={kofiLoaded}
+  ></script>
 </svelte:head>
 
 {#if name}
