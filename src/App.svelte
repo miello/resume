@@ -2,7 +2,6 @@
   import Tailwind from "./Tailwind.svelte";
   import Intro from "./Intro.svelte";
   import Work from "./Work.svelte";
-  import Kofi from "./Kofi.svelte";
   import HideToggle from "./HideToggle.svelte";
   import {
     educations,
@@ -12,7 +11,7 @@
     projects,
     sourceLink,
     technologies,
-    workExperiences,
+    extracurricularActivities,
   } from "./data";
 
   let editMode = false;
@@ -22,16 +21,9 @@
   }
 </script>
 
-<!-- Remove this is you does not want Kofi widget on your site -->
-<!-- {#if introData.github == "narze"}
-  <Kofi name={introData.github} />
-{/if} -->
-
 <Tailwind />
 
-<header
-  class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen"
->
+<header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white ">
   <h1 class="text-4xl">Resumette</h1>
   <h3>
     <button on:click={toggleMode} class="underline text-lg"
@@ -71,7 +63,12 @@
         <li>
           <HideToggle />
           <span class="w-40 inline-block">{tech.section}</span>
-          <span>{tech.details}</span>
+          <strong
+            >{tech.details.highlight
+              ? `${tech.details.highlight}, `
+              : ""}</strong
+          >
+          <span>{tech.details.normal || ""}</span>
         </li>
       {/each}
     </ul>
@@ -94,10 +91,12 @@
 
   <section>
     <HideToggle />
-    <h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
+    <h2 class="text-2xl print:text-4xl uppercase text-left">
+      Extracurricular Activities
+    </h2>
     <hr />
 
-    {#each workExperiences as exp}
+    {#each extracurricularActivities as exp}
       <Work {...exp} />
     {/each}
   </section>
@@ -109,13 +108,29 @@
 
     <ul class="text-left list-disc pl-8">
       {#each projects as project}
-        <li>
+        <li class="mt-2">
           <HideToggle />
           <strong>{project.name}</strong>
-          - {project.details}
-          <a href="https://{project.url}" target="_blank" rel="noreferrer"
-            ><strong>{project.url}</strong></a
-          >
+          <ul class="pl-8" style="list-style: circle;">
+            {#if project.details}
+              <li>
+                {project.details}
+              </li>
+            {/if}
+            {#if project.stack}
+              <li>
+                <strong>Tech Stack : </strong>
+                {project.stack.join(", ")}
+              </li>
+            {/if}
+            {#if project.url}
+              <li>
+                <a href="https://{project.url}" target="_blank" rel="noreferrer"
+                  ><strong>{project.url}</strong></a
+                >
+              </li>
+            {/if}
+          </ul>
         </li>
       {/each}
     </ul>

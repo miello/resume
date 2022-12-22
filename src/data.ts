@@ -13,36 +13,42 @@ export const introData = {
 
 export const technologies = [
   {
-    section: "Languages:",
-    details: "HTML5, CSS3, Typescript, JavaScript, Node.js",
+    section: "Languages :",
+    details: {
+      highlight: "HTML5, CSS3, Typescript, JavaScript",
+    },
   },
   {
-    section: "Library / Frameworks:",
-    details: "ReactJS, NextJS, SolidJS, TailwindCSS, VueJS, Svelte, NuxtJS",
+    section: "Library / Frameworks :",
+    details: {
+      highlight: "React.js, Next.js, Tailwind CSS",
+      normal: "Solid.js, Vue.js, Svelte",
+    },
   },
   {
-    section: "Tools:",
-    details: "Windows, NodeJS, VSCode, Git, Github, Gitlab, Eslint, Prettier",
+    section: "Tools :",
+    details: {
+      normal: "Windows, Node.js, VSCode, Git, Github, Gitlab, ESlint, Prettier",
+    },
   },
 ];
 
 export const educations = [
   {
     head: "Chulalongkorn University",
-    details: "B.Eng. Computer Engineering, 2020-2023",
+    details: "B.Eng. Computer Engineering, 2020-Present (Expected August 2024)",
   },
 ];
 
-export const workExperiences = [
+export const extracurricularActivities = [
   {
     position: "Front-end Web Developer",
-    company:
-      "Information Department Student Government of Chulalongkorn University",
+    company: "Student Government of Chulalongkorn University",
     url: "https://github.com/isd-sgcu",
     years: ["July 2021 ", " May 2022"],
     details: [
-      "Analyze design & requirement for technical feasibility in front-end development",
-      "Implement system that correspond with requirement from another department",
+      "Analyze design & requirements for technical feasibility in front-end development",
+      "Implement a system that corresponds with the requirement from another department",
       "Learn about project structure and implementation in various tech stack",
     ],
   },
@@ -51,7 +57,7 @@ export const workExperiences = [
     company: "Engineering Student Committee Chulalongkorn University",
     url: "https://esc.eng.chula.ac.th/",
     years: ["July 2021 ", " May 2022"],
-    details: ["Implement and maintain system to support another department"],
+    details: ["Implement and maintain a system to support another department"],
   },
 ];
 
@@ -60,53 +66,80 @@ export const projects = [
     name: "CU the journey (Maintainer)",
     details: "Interactive storyteller website for freshmen",
     url: "github.com/isd-sgcu/cu-the-journey",
+    stack: [
+      "Node.js",
+      "Typescript",
+      "Solid.js",
+      "Pixi.js",
+      "Tailwind CSS",
+      "Firebase",
+    ],
   },
   {
     name: "Freshers Fairs 2022 (Maintainer)",
     details:
-      "Registration website for Freshers Fairs Event. Apart from registration, website has QR code scanner for walk rally event also",
+      "Registration website for Freshers Fairs Event. Apart from registration, website also has QR code scanner for walk rally event",
     url: "github.com/isd-sgcu/rnkm65-frontend",
-  },
-  {
-    name: "Assigning Role Discord Bot",
-    details: "Proof of concept about how discord bot can assign role to user",
-    url: "github.com/miello/role-bot-discord",
-  },
-  {
-    name: "Notification Discord Bot",
-    details:
-      "Discord Bot which notify when we have new assignment or announcement from mycourseviles",
-    url: "github.com/miello/discord-notify-bot",
-  },
-  {
-    name: "URL Shortener",
-    details:
-      "Personal URL shortener website that try to deploy on digitalocean droplet",
-    url: "github.com/miello/url-shortener",
+    stack: ["Node.js", "Typescript", "Next.js", "Stitches"],
   },
   {
     name: "Lawfest 2021 (Maintainer)",
     details:
-      "Exhibition website with interactive story for lawfest event organized by faculty of law chulalongkorn university",
-    url: "lawfest-2021.web.app",
+      "Exhibition website with interactive story for Lawfest event organized by Faculty of Law, Chulalongkorn University",
+    url: "github.com/thinc-org/lawfest-2021",
+    stack: ["Node.js", "Typescript", "React.js", "Stitches", "Pixi.js"],
   },
   {
     name: "Club Mania (Maintainer)",
-    details: "Informatics website that have details about all clubs in chula",
+    details:
+      "Informatics website that has details about all clubs at Chulalongkorn University",
     url: "github.com/isd-sgcu/club-mania-frontend",
+    stack: ["Node.js", "Typescript", "Vue.js", "Windi CSS", "Firebase"],
   },
   {
     name: "Larngear Camp (Maintainer)",
     details:
-      "Registration website for larngear camp that I have maintained for Larngear Camp 21st",
+      "Registration website for larngear camp that at the time I maintained the website was larngear camp 21st",
     url: "github.com/esc-chula/larngearcamp-frontend",
+    stack: ["Node.js", "Typescript", "React.js", "Material UI"],
+  },
+  {
+    name: "Notification Discord Bot",
+    details:
+      "Discord Bot which notifies us every 24 hours if we have new assignments or announcements from Mycourseviles",
+    url: "github.com/miello/discord-notify-bot",
+    stack: [
+      "Node.js",
+      "Typescript",
+      "Discord.js",
+      "MongoDB",
+      "Go",
+      "Gorm",
+      "Fiber",
+      "Docker",
+      "Postgres",
+    ],
+  },
+  {
+    name: "URL Shortener",
+    details:
+      "Personal URL shortener website that experiments deploying on DigitalOcean droplet",
+    url: "github.com/miello/url-shortener",
+    stack: [
+      "Node.js",
+      "Typescript",
+      "Svelte",
+      "Tailwind CSS",
+      "Go",
+      "Gin",
+      "Gorm",
+      "Postgres",
+    ],
   },
 ];
 
 export const interests = [
   "Technology : Computer Security, 3D Model in Web, Micro-frontend, Smart Contract and relevant fields",
   "Typing : 60-70 WPM (English), 40-50 WPM (Thai)",
-  "Hobby : Play a game, Listen to music",
-  "Games : Music games, FPS, Puzzle",
   "Music : Rock, EDM, Pop",
 ];
