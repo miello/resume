@@ -6,7 +6,7 @@ export const ogImageUrl =
 export const introData = {
   name: "Pisitpong Chongpipattanakul",
   nickname: "Earth",
-  email: "pisitpong@miello.dev",
+  email: "pisitpongchongpipattanakul@gmail.com",
   linkedin: "pisitpong-chongpipattanakul",
   github: "miello",
   location: "Samut Prakarn, Thailand",
