@@ -11,7 +11,7 @@
     projects,
     sourceLink,
     technologies,
-    extracurricularActivities,
+    workExperiences,
   } from "./data";
 
   let editMode = false;
@@ -92,12 +92,12 @@
   <section>
     <HideToggle />
     <h2 class="text-2xl print:text-4xl uppercase text-left">
-      Extracurricular Activities
+      Work Experience
     </h2>
     <hr />
 
-    {#each extracurricularActivities as exp}
-      <Work {...exp} />
+    {#each workExperiences as work}
+      <Work {...work} />
     {/each}
   </section>
 

@@ -7,6 +7,7 @@ export const introData = {
   name: "Pisitpong Chongpipattanakul",
   nickname: "Earth",
   email: "pisitpong@miello.dev",
+  linkedin: "pisitpong-chongpipattanakul",
   github: "miello",
   location: "Samut Prakarn, Thailand",
 };
@@ -40,12 +41,22 @@ export const educations = [
   },
 ];
 
-export const extracurricularActivities = [
+export const workExperiences = [
+  {
+    position: "Intern Software Engineer (Frontend)",
+    company: "LINE MAN WONGNAI",
+    url: "https://lmwn.com/",
+    years: ["June 2023", "July 2023"],
+    details: [
+      "Implement design system component used in product",
+      "Learn about product development process in a big company scale",
+    ],
+  },
   {
     position: "Front-end Web Developer",
     company: "Student Government of Chulalongkorn University",
     url: "https://github.com/isd-sgcu",
-    years: ["July 2021 ", " May 2022"],
+    years: ["July 2021", "May 2022"],
     details: [
       "Analyze design & requirements for technical feasibility in front-end development",
       "Implement a system that corresponds with the requirement from another department",
@@ -56,7 +67,7 @@ export const extracurricularActivities = [
     position: "Front-end Web Developer",
     company: "Engineering Student Committee Chulalongkorn University",
     url: "https://esc.eng.chula.ac.th/",
-    years: ["July 2021 ", " May 2022"],
+    years: ["July 2021", "May 2022"],
     details: ["Implement and maintain a system to support another department"],
   },
 ];
