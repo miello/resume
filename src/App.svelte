@@ -23,7 +23,7 @@
 
 <Tailwind />
 
-<header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white ">
+<header class="web-only text-center p-4 sm:p-6 bg-blue-400 text-white">
   <h1 class="text-4xl">Resumette</h1>
   <h3>
     <button on:click={toggleMode} class="underline text-lg"

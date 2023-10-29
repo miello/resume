@@ -37,7 +37,7 @@ export const technologies = [
 export const educations = [
   {
     head: "Chulalongkorn University",
-    details: "B.Eng. Computer Engineering, 2020-Present (Expected August 2024)",
+    details: "B.Eng. Computer Engineering, 2020-Present (Expected Diplomat: 2024)",
   },
 ];
 
@@ -113,23 +113,6 @@ export const projects = [
       "Registration website for larngear camp that at the time I maintained the website was larngear camp 21st",
     url: "github.com/esc-chula/larngearcamp-frontend",
     stack: ["Node.js", "Typescript", "React.js", "Material UI"],
-  },
-  {
-    name: "Notification Discord Bot",
-    details:
-      "Discord Bot which notifies us every 24 hours if we have new assignments or announcements from Mycourseviles",
-    url: "github.com/miello/discord-notify-bot",
-    stack: [
-      "Node.js",
-      "Typescript",
-      "Discord.js",
-      "MongoDB",
-      "Go",
-      "Gorm",
-      "Fiber",
-      "Docker",
-      "Postgres",
-    ],
   },
   {
     name: "URL Shortener",
