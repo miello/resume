@@ -46,7 +46,7 @@
 </header>
 
 <main
-  class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl {editMode
+  class="text-center px-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl {editMode
     ? 'edit-mode'
     : 'display-mode'}"
 >
