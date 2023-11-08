@@ -37,7 +37,7 @@ export const technologies = [
 export const educations = [
   {
     head: "Chulalongkorn University",
-    details: "B.Eng. Computer Engineering, 2020-Present (Expected Diplomat: 2024)",
+    details: "B.Eng. Computer Engineering, 2020-Present (Expected Graduation: 2024)",
   },
 ];
 
@@ -117,7 +117,7 @@ export const projects = [
   {
     name: "URL Shortener",
     details:
-      "Personal URL shortener website that experiments deploying on DigitalOcean droplet",
+      "Personal URL shortener website that experiments deployment on DigitalOcean droplet",
     url: "github.com/miello/url-shortener",
     stack: [
       "Node.js",
