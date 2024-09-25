@@ -37,11 +37,30 @@ export const technologies = [
 export const educations = [
   {
     head: "Chulalongkorn University",
-    details: "B.Eng. Computer Engineering, 2020-Present (Expected Graduation: 2024)",
+    details: "B.Eng. Computer Engineering, 2020-2023",
   },
 ];
 
 export const workExperiences = [
+  {
+    position: "Software Engineer",
+    company: "Softnetics",
+    url: "https://softnetics.tech",
+    years: ["August 2024", "Present"],
+    details: [
+      "Implement and design a system that corresponds with the requirement from the client",
+      "Researching the client's requirement and propose a solution",
+    ],
+  },
+  {
+    position: "Part-time Software Engineer",
+    company: "Softnetics",
+    url: "https://softnetics.tech",
+    years: ["January 2024", "July 2024"],
+    details: [
+      "Implement and design a system that corresponds with the requirement from the client",
+    ],
+  },
   {
     position: "Intern Software Engineer (Frontend)",
     company: "LINE MAN WONGNAI",
@@ -90,35 +109,28 @@ export const projects = [
     name: "Freshers Fairs 2022 (Maintainer)",
     details:
       "Registration website for Freshers Fairs Event. Apart from registration, website also has QR code scanner for walk rally event",
-    url: "github.com/isd-sgcu/rnkm65-frontend",
+    url: "https://github.com/isd-sgcu/rnkm65-frontend",
     stack: ["Node.js", "Typescript", "Next.js", "Stitches"],
   },
   {
     name: "Lawfest 2021 (Maintainer)",
     details:
       "Exhibition website with interactive story for Lawfest event organized by Faculty of Law, Chulalongkorn University",
-    url: "github.com/thinc-org/lawfest-2021",
+    url: "https://github.com/thinc-org/lawfest-2021",
     stack: ["Node.js", "Typescript", "React.js", "Stitches", "Pixi.js"],
-  },
-  {
-    name: "Club Mania (Maintainer)",
-    details:
-      "Informatics website that has details about all clubs at Chulalongkorn University",
-    url: "github.com/isd-sgcu/club-mania-frontend",
-    stack: ["Node.js", "Typescript", "Vue.js", "Windi CSS", "Firebase"],
   },
   {
     name: "Larngear Camp (Maintainer)",
     details:
       "Registration website for larngear camp that at the time I maintained the website was larngear camp 21st",
-    url: "github.com/esc-chula/larngearcamp-frontend",
+    url: "https://github.com/esc-chula/larngearcamp-frontend",
     stack: ["Node.js", "Typescript", "React.js", "Material UI"],
   },
   {
     name: "URL Shortener",
     details:
       "Personal URL shortener website that experiments deployment on DigitalOcean droplet",
-    url: "github.com/miello/url-shortener",
+    url: "https://github.com/miello/url-shortener",
     stack: [
       "Node.js",
       "Typescript",
@@ -134,6 +146,5 @@ export const projects = [
 
 export const interests = [
   "Technology : Computer Security, 3D Model in Web, Micro-frontend, Smart Contract and relevant fields",
-  "Typing : 60-70 WPM (English), 40-50 WPM (Thai)",
   "Music : Rock, EDM, Pop",
 ];
