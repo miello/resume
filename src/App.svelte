@@ -62,7 +62,7 @@
       {#each technologies as tech}
         <li>
           <HideToggle />
-          <span class="w-40 inline-block">{tech.section}</span>
+          <span class="w-44 inline-block">{tech.section}</span>
           <strong
             >{tech.details.highlight
               ? `${tech.details.highlight}, `
